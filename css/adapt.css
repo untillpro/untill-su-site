@@ -1,0 +1,44 @@
+@media (max-width : 780px) {
+    .right,
+    .left {
+        position: static;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        display: block;
+    }
+
+    .right .cc,
+    .left .cc {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .wlogo {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .logo {
+        max-width: 300px;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width : 600px) {
+    .header {
+        font-size: 50px;
+    }
+
+    .button a {
+        width: 240px;
+    }
+
+    .logo {
+        max-width: 160px;
+        margin: 40px auto;
+    }
+}

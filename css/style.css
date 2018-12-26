@@ -1,0 +1,208 @@
+font-face {
+    src: url(fonts/Molot.otf);
+    font-family: Molot;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(../img/bg_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100%;
+}
+
+.shadow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    left: 0px;
+    top: 0px;
+
+    z-index: 1;
+
+    background-color: rgba(0,0,0,0.3);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.left .cc {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.right .cc {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    max-width: 500px;
+    width: 80%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header {
+    font-size: 80px;
+    color: #fff;
+    font-family: Molot, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    margin-top: 50px;
+
+}
+
+.button a {
+    display: inline-block;
+
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff9500, #ff5e3a);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    font-family: Molot, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+
+    transition: all 0.3s;
+}
+
+.button a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.play {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.play a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s color;
+}
+
+.play i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.play i svg {
+    width: 100%;
+    height: 100%;
+
+    fill: #fff;
+    transition: 0.3s fill;
+}
+
+.play a:hover {
+    color: #ff9500;
+}
+
+.play a:hover i svg {
+    fill: #ff9500;
+}
+
+.w1, .w2, .w3, .w4 {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.w1 {
+    transition-delay: .2s;
+}
+
+.w2 {
+    transition-delay: .4s;
+}
+
+.w3 {
+    transition-delay: .6s;
+}
+
+.w4 {
+    transition-delay: 1.2s;
+    transition-duration: 1s;
+}
+
+.ready .w1,
+.ready .w2,
+.ready .w3,
+.ready .w4 {
+    opacity: 1;
+}
+
+.wlogo {
+    transform: scale(1.05);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    transition-delay: 1.2s
+}
+
+.ready .wlogo {
+    transform: scale(1);
+    opacity: .9;
+}
