@@ -33,6 +33,14 @@
         max-width: 300px;
         margin: 50px auto;
     }
+
+    .show_adapt {
+        display: block;
+    }
+
+    .hide_adapt {
+        display: none;
+    }
 }
 
 @media (max-width : 600px) {
