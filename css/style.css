@@ -153,7 +153,8 @@ body {
 
 .w0, .w1, .w2, .w3, .w4, .w5 {
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1s, transform 1s;
+    transform: scale(1.1);
 }
 
 
@@ -176,6 +177,7 @@ body {
 .w4 {
     transition-delay: 2s;
     transition-duration: 1s;
+    
 }
 
 .w5 {
@@ -190,6 +192,7 @@ body {
 .ready .w4,
 .ready .w5 {
     opacity: 1;
+    transform: scale(1);
 }
 
 .wlogo {
